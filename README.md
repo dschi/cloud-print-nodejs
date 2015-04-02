@@ -95,6 +95,19 @@ var params = {
 cloud_print.print(params,function(err, response){});
 ```
 
+###Get printer jobs
+
+```js
+var options = {};//extra options for filter
+cloud_print.getJobs(options, function(err, response){})
+```
+
+###Delete printer job
+
+```js
+cloud_print.getJobs("jobid", function(err, response){})
+```
+
 ### Response
 
 ```js

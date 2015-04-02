@@ -98,6 +98,15 @@
             _flow(params, callback, self, this.cloud_print.jobs.submit);
         };
 
+        this.getJobs = function (params, callback) {
+            _flow(params, callback, self, this.cloud_print.jobs.get);
+        };
+
+        this.deleteJob = function (jobid, callback) {
+            var params = {jobid: jobid};
+            _flow(params, callback, self, this.cloud_print.jobs.delete);
+        };
+
     }
 
     Object.defineProperty(
