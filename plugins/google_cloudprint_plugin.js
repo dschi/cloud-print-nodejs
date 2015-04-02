@@ -95,7 +95,7 @@
             params.renameProperty('content_type','contentType','url');
             params.ticket = ticket;
 
-            _flow(params, callback, self, this.cloud_print.jobs.sumbmit);
+            _flow(params, callback, self, this.cloud_print.jobs.submit);
         };
 
     }
